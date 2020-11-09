@@ -4,7 +4,8 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "test": "jest"
+		"build": "babel src -d dist --extensions '.ts' --ignore './src/**/*.spec.ts'",
+		"test": "jest"
   },
   "repository": {
     "type": "git",
