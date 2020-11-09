@@ -4,8 +4,9 @@
 		"target": "ES2015",
 		"module": "ESNext",
 		"declaration": true,
-		"emitDeclarationOnly": true,
-		"strict": true
+		"strict": true,
+		"moduleResolution": "Node",
+		"outDir": "./dist"
 	},
 	"files": ["./src/index.ts"]
 }
