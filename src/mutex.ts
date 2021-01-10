@@ -4,27 +4,25 @@ export const getMutex = () => {
 
   const getLock = () => {
     const isLocked = busy > 0
+
     const lock = new Promise<void>(resolve => {
+      if (!isLocked) {
+        resolve()
+        return
+      }
       queue.push(resolve)
     })
 
     busy++
-    let released = false
 
     const releaser = () => {
       const resolve = queue.shift()
+      busy--
       if (resolve) {
-        if (released) {
-          busy--
-        }
-        released = true
         resolve()
       }
     }
 
-    if (!isLocked) {
-      releaser()
-    }
     return [lock, releaser] as const
   }
   return { getLock }
