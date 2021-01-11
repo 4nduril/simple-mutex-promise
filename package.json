@@ -68,7 +68,6 @@
   "release": {
     "branches": [
       "main"
-    ],
-    "dryRun": true
+    ]
   }
 }
