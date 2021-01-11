@@ -1,4 +1,4 @@
-# simple-mutex
+# simple-mutex-promise
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![Build Status](https://www.travis-ci.com/4nduril/simple-mutex.svg?branch=main)](https://www.travis-ci.com/4nduril/simple-mutex)
@@ -26,19 +26,19 @@ Before the value in question is read and potentially modified a lock or mutex (m
 Install it with npm
 
 ```shell
-npm install simple-mutex
+npm install simple-mutex-promise
 ```
 
 or with yarn
 
 ```shell
-yarn add simple-mutex
+yarn add simple-mutex-promise
 ```
 
 In your code import it and create the mutex instance *outside* of the critical function:
 
 ```typescript
-import { getMutex } from 'simple-mutex'
+import { getMutex } from 'simple-mutex-promise'
 
 const mutex = getMutex()
 ```
@@ -67,4 +67,4 @@ Before the outside value is used we `await` the lock `(1)`. So function executio
 
 ## Types
 
-`simple-mutex` is written in TypeScript and type declarations are also part of the build. You don't need to install them separately.
+`simple-mutex-promise` is written in TypeScript and type declarations are also part of the build. You don't need to install them separately.
