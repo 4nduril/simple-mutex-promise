@@ -1,6 +1,7 @@
 # simple-mutex
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![Build Status](https://www.travis-ci.com/4nduril/simple-mutex.svg?branch=main)](https://www.travis-ci.com/4nduril/simple-mutex)
 
 This library provides a very simple [mutex/lock](https://en.wikipedia.org/wiki/Lock_(computer_science)) implementation in JavaScript.
 
